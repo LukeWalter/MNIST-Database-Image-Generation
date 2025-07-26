@@ -13,11 +13,6 @@ for y in range(height):
         else:
             pixel_data.append((0, 0, 0))        # Black
 
-# Create a new image in 'RGB' mode
 img = Image.new('RGB', (width, height))
-
-# Put the pixel data into the image
 img.putdata(pixel_data)
-
-# Save the image as a PNG file
 img.save('output.png')
